@@ -1,0 +1,47 @@
+h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* sombra suave */
+}
+
+p {
+  font-size: 14pt;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); /* mais discreta */
+}
+
+.container-apresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-texto-centro {
+  width: 50%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
