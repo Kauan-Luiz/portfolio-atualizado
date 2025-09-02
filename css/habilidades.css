@@ -1,0 +1,66 @@
+.container-habilidades {
+    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1200px; /* limita o tamanho da grid */
+  margin: 30px auto;
+  gap: 30px;
+}
+
+@media (min-width: 1024px) {
+  .container-habilidades {
+    grid-template-columns: repeat(4, 1fr); /* no máximo 4 por linha */
+    
+  }
+}
+
+.card-habilidade {
+  background: rgba(26, 26, 26, 0.3); /* Fundo semitransparente */
+  padding: 20px 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* Desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Suporte Safari */
+  border: 1px solid rgba(138, 43, 226, 0.6); /* Borda roxa */
+  box-shadow: 0 0 12px rgba(138, 43, 226, 0.3); /* Glow suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-habilidade:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); /* Glow mais forte no hover */
+}
+
+.card-habilidade img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.card-habilidade h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card-habilidade p {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-certificado {
+  display: inline-block;
+  background: linear-gradient(45deg, #4B0082, #8A2BE2); /* Roxo escuro → Violeta */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, opacity 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.btn-certificado:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
+}
