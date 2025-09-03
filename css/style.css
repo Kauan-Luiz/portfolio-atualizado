@@ -3,29 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  background: rgba(26, 26, 26, 0.3); /* Fundo semitransparente */
-  padding: 20px 40px;
-  backdrop-filter: blur(10px); /* Desfoque */
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil */
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-main {
-  position: relative;
-  z-index: -1;
-  color: white;
-  text-align: center;
-  padding-top: 100px;
-}
-
 video.bg-video {
   position: fixed;
   top: 0;
@@ -36,16 +13,40 @@ video.bg-video {
   z-index: -1;
 }
 
-.logo img {
-  max-width: 200px;
+
+header {
+  border-radius: 20px;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: rgba(26, 26, 26, 0.3); /* Fundo semitransparente */
+  padding: 20px 40px;
+  backdrop-filter: blur(10px); /* Desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil */
 }
+
+nav {
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 180px;
+  cursor: pointer;
+}
+
 
 ul {
   list-style: none;
   display: flex;
-  gap: 30px;
   margin: 0;
   padding: 0;
+    gap: 30px;
+
 }
 
 ul li a {
@@ -63,7 +64,7 @@ ul li a::after {
   bottom: -3px; /* Distância da barrinha em relação ao texto */
   width: 0;
   height: 2px;
-  background: #4B0082; /* Cor da barrinha */
+  background: #0000b0; /* Cor da barrinha */
   transition: width 0.3s ease;
 }
 
@@ -71,28 +72,15 @@ ul li a:hover::after {
   width: 100%;
 }
 
-.whatsapp-button {
-  display: inline-block;
-  padding: 12px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  background: linear-gradient(45deg, #4B0082, #8A2BE2); /* Roxo escuro → Violeta */
-  border-radius: 30px;
-  transition: background 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.whatsapp-icon{
+  width: 50px;
+  float: right;
 }
 
-.whatsapp-button:hover {
-  background: linear-gradient(45deg, #8A2BE2, #4B0082); /* Inverte as cores no hover */
-  transform: translateY(-2px);
+.wpp{
+  width: 180px;
 }
 
-.whatsapp-button:active {
-  transform: translateY(1px); /* Efeito ao clicar */
-}
 
 /* Estilo do menu hambúrguer */
 .menu-toggle {
@@ -175,9 +163,25 @@ ul li a:hover::after {
     transition: 0.3s;
   }
 
-  /* Esconde botão WhatsApp no mobile */
-  .whatsapp-button {
-    display: none;
-  }
+
+  .whatsapp-icon{
+  display: none;
+}
+
+  .container-texto-centro {
+  min-width: 60%;
+}
+
+.minha-foto{
+  min-width: 70%;
+
+}
+
 }
   
+main {
+  position: relative;
+  z-index: -0;
+  color: white;
+  text-align: center;
+}

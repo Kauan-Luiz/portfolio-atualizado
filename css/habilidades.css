@@ -20,8 +20,6 @@
   border-radius: 20px;
   backdrop-filter: blur(10px); /* Desfoque */
   -webkit-backdrop-filter: blur(10px); /* Suporte Safari */
-  border: 1px solid rgba(138, 43, 226, 0.6); /* Borda roxa */
-  box-shadow: 0 0 12px rgba(138, 43, 226, 0.3); /* Glow suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -49,14 +47,14 @@
 
 .btn-certificado {
   display: inline-block;
-  background: linear-gradient(45deg, #4B0082, #8A2BE2); /* Roxo escuro → Violeta */
+  background: #0000B0; /* Roxo escuro → Violeta */
   color: white;
   padding: 10px 20px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.2s, opacity 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  box-shadow: 0 0 4px rgba(3, 91, 255, 0.5);
 }
 
 .btn-certificado:hover {
