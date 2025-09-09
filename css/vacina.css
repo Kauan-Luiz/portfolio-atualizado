@@ -1,0 +1,104 @@
+.detalhe-projeto {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.detalhe-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas colunas */
+  gap: 30px;
+  align-items: center;
+}
+
+/* Coluna vídeo */
+.detalhe-video video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil */
+}
+
+.detalhe-video h1{
+    text-align: left;
+}
+/* Coluna info */
+
+
+.tecnologias {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tecnologias img {
+  width: 40px;   /* tamanho dos ícones */
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.tecnologias img:hover {
+  transform: scale(1.2); /* efeito ao passar o mouse */
+}
+
+
+.detalhe-info p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  background: #333;       /* fundo preto */
+  color: #fff;            /* texto branco */
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-github:hover {
+  background: #00cc66;       /* preto mais claro no hover */
+  transform: scale(1.05); /* leve zoom */
+}
+
+.btn-github i {
+  font-size: 1.2rem; /* tamanho do ícone */
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .detalhe-container {
+    grid-template-columns: 1fr; /* vira 1 coluna */
+  }
+
+  .detalhe-info p {
+    margin: 0px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+  .detalhe-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .detalhe-video h1 {
+    font-size: 20px;
+    
+  }
+
+  .tecnologias {
+    justify-content: center;
+  }
+
+  .detalhe-projeto{
+    margin-top: 10px;
+  }
+}

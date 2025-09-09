@@ -13,20 +13,23 @@ video.bg-video {
   z-index: -1;
 }
 
-
 header {
+ 
   border-radius: 20px;
-  width: 93%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
-  background: rgba(26, 26, 26, 0.3); /* Fundo semitransparente */
-  padding: 20px 40px;
-  backdrop-filter: blur(10px); /* Desfoque */
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil */
+  background: rgba(26, 26, 26, 0.3);
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 10001; /* garante que o header fique acima do vídeo */
 }
 
+.container-header{
+  display: flex;
+  justify-content: center;  
+}
 nav {
   width: 100%;
   display: flex;  
@@ -39,21 +42,19 @@ nav {
   cursor: pointer;
 }
 
-
 ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-    gap: 30px;
-
+  gap: 30px;
 }
 
 ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  position: relative; /* Necessário para o pseudo-elemento */
+  position: relative;
   transition: color 0.3s;
 }
 
@@ -61,10 +62,10 @@ ul li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; /* Distância da barrinha em relação ao texto */
+  bottom: -3px;
   width: 0;
   height: 2px;
-  background: #0000b0; /* Cor da barrinha */
+  background: #0000b0;
   transition: width 0.3s ease;
 }
 
@@ -72,15 +73,14 @@ ul li a:hover::after {
   width: 100%;
 }
 
-.whatsapp-icon{
-  width: 50px;
+.whatsapp-icon {
+  width: 35px;
   float: right;
 }
 
-.wpp{
+.wpp {
   width: 180px;
 }
-
 
 /* Estilo do menu hambúrguer */
 .menu-toggle {
@@ -101,35 +101,61 @@ ul li a:hover::after {
   transition: 0.3s;
 }
 
-/* Esconde menu no mobile */
+/* Esconde menu no desktop */
 .menu {
   display: flex;
 }
 
+main {
+  position: relative;
+  z-index: 0;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 501px) {
+ header{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
+
+@media (max-width: 500px) {
+ header{
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+
+ }
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
+
   /* Menu mobile */
   .menu {
+    
     width: 100%;
     text-align: center;
-    background: rgba(26, 26, 26, 0.9);
-    top: 85px;
+    background: #333;
+    top: 80px;
     left: 0;
     padding: 20px 0;
-    z-index: 9999;
+    z-index: 10000; /* maior que tudo que possa estar no main */
     position: fixed;
-    display: none; /* Esconde por padrão */
-    flex-direction: column; /* Para os links ficarem em coluna */
-    align-items: center; /* Centraliza horizontalmente */
+    display: none;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu.active {
-    display: flex; /* Mostra quando ativo */
+    display: flex;
   }
 
   .menu ul {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaçamento entre os links */
+    gap: 15px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -152,6 +178,7 @@ ul li a:hover::after {
     justify-content: space-between;
     width: 30px;
     height: 22px;
+    z-index: 10002; /* acima do menu */
   }
 
   .menu-toggle span {
@@ -163,25 +190,29 @@ ul li a:hover::after {
     transition: 0.3s;
   }
 
+  /* Animação do hambúrguer para X */
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
-  .whatsapp-icon{
-  display: none;
-}
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .whatsapp-icon {
+    display: none;
+  }
 
   .container-texto-centro {
-  min-width: 60%;
-}
+    min-width: 60%;
+  }
 
-.minha-foto{
-  min-width: 70%;
+  .minha-foto {
+    min-width: 70%;
+  }
 
-}
-
-}
-  
-main {
-  position: relative;
-  z-index: -0;
-  color: white;
-  text-align: center;
 }

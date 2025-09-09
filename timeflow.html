@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vacina.css">  
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-header">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+        </div>
+
+        <!-- Botão hambúrguer -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+          </ul>
+        </div>
+
+        <div class="wpp">
+          <a href="https://wa.me/5514988374605">
+            <img src="img/whatsapp.png" alt="" srcset="" class="whatsapp-icon">
+          </a>   
+        </div>
+
+      </nav>
+    </header>
+  </div>
+  
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="img/fundo3.mp4" type="video/mp4">
+  </video>
+
+   <main class="detalhe-projeto">
+    <div class="detalhe-container">
+      
+      <!-- Coluna esquerda (vídeo) -->
+      <div class="detalhe-video">
+        <h1>Sistema de Vacinação</h1>
+        <video controls>
+          <source src="img/TimeFlow.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+
+      <!-- Coluna direita (info) -->
+      <div class="detalhe-info">
+        
+        <p>
+          Desenvolvi um sistema CRUD completo para gerenciamento de contatos, permitindo cadastrar, visualizar, editar e excluir
+           registros de forma simples. O sistema conta com interface intuitiva, validação de dados e layout responsivo.
+        </p>
+        
+        <div class="tecnologias">
+            <img src="img/html.png" alt="HTML" title="HTML">
+            <img src="img/css.png" alt="CSS" title="CSS">
+            <img src="img/php.png" alt="PHP" title="PHP">
+            <img src="img/js.png" alt="JavaScript" title="JavaScript">
+        </div>
+
+
+        <a href="https://github.com/Kauan-Luiz/Agenda-php" target="_blank" class="btn btn-github">
+            Ver no GitHub <i class="fab fa-github"></i>
+        </a>
+    
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Script para abrir/fechar o menu no mobile -->
+  <script src="assets/menu-mobile.js"></script>
+
+</body>
+</html>

@@ -40,7 +40,7 @@ p {
 
 .icon img {
   cursor: pointer;
-
+  
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -50,10 +50,16 @@ p {
   transform: scale(1.1);
 }
 
-.minha-foto{
-  width: 40%;
-
+.minha-foto {
+  width: 200px;        /* ajuste o tamanho da foto */
+  height: 200px;       /* mantém quadrado para o círculo ficar perfeito */
+  border-radius: 50%;  /* transforma em círculo */
+  object-fit: cover;   /* garante que a imagem não distorça */
+  border: 3px solid #0000B0; /* opcional: borda roxa */
+  box-shadow: 0 0 15px rgba(0,0,0,0.4); /* sombra bonita */
+  margin-top: 40px;
 }
+
 .botao-curriculo {
   cursor: pointer;
   margin-bottom: 10px;
@@ -71,7 +77,6 @@ p {
 }
 
 .botao-curriculo:hover {
-  background: linear-gradient(45deg, #8A2BE2, #4B0082); /* Inverte as cores no hover */
   transform: translateY(-2px);
 }
 

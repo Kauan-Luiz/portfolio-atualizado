@@ -20,84 +20,111 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="img/logo.png" alt="Logo">
-      </div>
+  <div class="container-header">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+        </div>
 
-      <!-- Botão hambúrguer -->
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <!-- Botão hambúrguer -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <!-- Menu -->
-      <div class="menu" id="menu">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="habilidades.html">Habilidades</a></li>
-        </ul>
-      </div>
+        <!-- Menu -->
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+          </ul>
+        </div>
 
-      <div class="wpp">
-        <a href="https://wa.me/5514988374605">
-          <img src="img/whatsapp.png" alt="" srcset="" class="whatsapp-icon">
-        </a>   
-      </div>
-    </nav>
-  </header>
+        <div class="wpp">
+          <a href="https://wa.me/5514988374605">
+            <img src="img/whatsapp.png" alt="" srcset="" class="whatsapp-icon">
+          </a>   
+        </div>
+
+      </nav>
+    </header>
+  </div>
   
   <video class="bg-video" autoplay muted loop playsinline>
-    <source src="img/fundo5.mp4" type="video/mp4">
+    <source src="img/fundo3.mp4" type="video/mp4">
   </video>
 
   <main>
-   <section class="projetos-section">
-    <h2>Meus Projetos</h2>
-    <div class="projetos-container">
-      
-      <div class="projeto">
-        <video src="img/fundo6.mp4" autoplay muted loop playsinline></video>
-        <div class="projeto-overlay">
-          <div class="tech">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
+    <div>
+      <section class="projetos-section">
+        <h2>Principais Projetos</h2>
+        <div class="projetos-container">
+          
+          <div class="projeto">
+            <a href="vacina.html"><video src="img/vacina+.mp4" autoplay muted loop playsinline></video></a>
+            
+            <div class="projeto-overlay">
+              <div class="tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                
+              </div>
+              <h3>Vacina+</h3>
+            </div>
           </div>
-          <h3>Projeto 1</h3>
-        </div>
-      </div>
 
-      <div class="projeto">
-        <video src="img/fundo6.mp4" autoplay muted loop playsinline></video>
-        <div class="projeto-overlay">
-          <div class="tech">
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>JavaScript</span>
+          <div class="projeto">
+            <a href="agenda.html"><video src="img/ControleDeContato.mp4" autoplay muted loop playsinline></video></a>         
+            <div class="projeto-overlay">
+              <div class="tech">
+                <span>C#</span>
+                <span>ASP.NET</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SQL Server</span>
+              </div>
+              <h3>Agenda</h3>
+            </div>
           </div>
-          <h3>Projeto 2</h3>
-        </div>
-      </div>
 
-      <div class="projeto">
-        <video src="img/fundo6.mp4" autoplay muted loop playsinline></video>
-        <div class="projeto-overlay">
-          <div class="tech">
-            <span>C#</span>
-            <span>.NET MAUI</span>
+          <div class="projeto">
+            <a href="aura.html"><video src="img/Aura.mp4" autoplay muted loop playsinline></video></a>   
+            <div class="projeto-overlay">
+              <div class="tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3>Aura Ecommerce</h3>
+            </div>
           </div>
-          <h3>Projeto 3</h3>
-        </div>
-      </div>
 
+          <div class="projeto">
+            <a href="timeflow.html"><video src="img/TimeFlow.mp4" autoplay muted loop playsinline></video></a>  
+            <div class="projeto-overlay">
+              <div class="tech">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>Bootstrap</span>
+              </div>
+              <h3>Time Flow</h3>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-  </section>
+  </main>
 
- 
 
 
   <footer>
